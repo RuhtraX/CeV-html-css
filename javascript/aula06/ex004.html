@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: "amiga";
+            src: url("../../fonts/Topaz_a500.ttf");
+        }
+        main {
+            max-width: 65%;
+            padding: 15px;
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: black;
+            height: 500px;
+        }
+        body {
+            background-color: grey;
+            color: orange;
+            font-family: amiga;
+            font-size: 14pt;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <script>
+            var nome = window.prompt("Qual é o seu nome?")
+            document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.<br>`)
+            document.writeln(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`)
+            document.writeln(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+        </script>
+    </main>
+</body>
+</html>
