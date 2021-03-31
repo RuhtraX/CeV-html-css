@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+         @font-face {
+            font-family: "amiga";
+            src: url("../../../fonts/Topaz_a500.ttf") format('truetype');
+            /*
+                Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+        main {
+            max-width: 65%;
+            padding: 15px;
+            border-radius: 20px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: black;
+            height: 500px;
+        }
+        body {
+            font-family: amiga;
+            font-size: 1em;
+            margin: auto;
+            background-color: grey;
+            color: orange;
+        }
+        h1 {
+            background-color: orange;
+            color: black;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Título</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium dignissimos assumenda repellendus sequi quia quod numquam beatae dolorum suscipit. Ab maxime minus laborum sit corporis aliquid explicabo quia ea facilis.</p>
+    </main>
+</body>
+</html>
