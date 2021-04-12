@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "amiga";
+    src: url("../../../fonts/Topaz_a500.ttf") format('truetype');
+}
+
+body {
+    background-color: black;
+    color:orange;
+    font-family: amiga;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h1#principal {
+    text-align: center;
+    color: black;
+    background-color: orange;
+}
+
+h2 {
+    font-size: 1.2em;
+}
