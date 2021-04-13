@@ -24,3 +24,15 @@ h1#principal {
 h2 {
     font-size: 1.2em;
 }
+
+.basico {
+    color: #00ff00;
+}
+
+.intermediario {
+    color:yellow;
+}
+
+.avancado {
+    color:red;
+}
