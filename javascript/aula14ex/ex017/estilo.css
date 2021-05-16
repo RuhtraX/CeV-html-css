@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "amiga";
+    src: url("../../../fonts/Topaz_a500.ttf");
+}
+body {
+    background-color: lightgray;
+    font-family: amiga;
+}
+
+input {
+    background-color: black;
+    color: orange;
+    font-family: amiga;
+    font-size: 14px;
+}
+
+header {
+    color: black;
+    text-align: center;
+}
+
+section {
+    background-color: black;
+    color: orange;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow:  4px 4px 4px rgba(0,0,0,0.4);
+}
+
+footer {
+    color: black;
+    text-align: center;
+}
