@@ -1,8 +1,11 @@
 function tabuada() {
     var num = Number(document.getElementById("txtNum").value);
-    var res = document.getElementById("res")
-    res.innerHTML = ''
+    var tab = document.getElementById("seltabuada")
+    tab.innerHTML = ''
     for (var c=1; c<11; c++){
-        res.innerHTML += `<p>${c} * ${num} = ${c*num}</p>`
+        let item = document.createElement('option')
+        item.text = `${c} * ${num} = ${c*num}`
+        item.value = `tab${c}`
+        tab.appendChild(item)
     }
 }
