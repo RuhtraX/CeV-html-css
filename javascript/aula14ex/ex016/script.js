@@ -3,20 +3,41 @@ function contar() {
     var fim = Number(document.getElementById("txtFim").value)
     var passo = Number(document.getElementById("txtPas").value)
     var res = document.getElementById("res")
-    if (fim < inicio) {
-        res.innerHTML = '<p>[ERRO] Fim não pode ser menor que o início.</p>'
-    } else {
-        res.innerHTML = ''
+    res.innerHTML = ''
+    var c = inicio
+    if (fim > inicio) {
         if (passo < 1) {
-            res.innerHTML = `<p>[AVISO] Passo ${passo} inválido. Alterando passo para 1.</p>`
-            passo = 1
+            res.innerHTML += '<p>'
+            res.innerHTML += `[AVISO] Passo ${passo} inválido. `
+            if (passo == 0) {
+                passo = 1
+                res.innerHTML += `Alterado para ${passo}.</p>`
+            } else {
+                passo *= -1
+                res.innerHTML += `Alterado para ${passo}.</p>`
+            }
         }
         res.innerHTML += '<p>'
-        var c = inicio
         while (c <= fim) {
             res.innerHTML += `${c} ➡️ `
             c += passo
         }
-        res.innerHTML += '&#x1F3C1</p>'
+    } else {
+        if (passo >= 0) {
+            res.innerHTML += '<p>'
+            res.innerHTML += `[AVISO] Passo ${passo} inválido. `
+            if (passo == 0) {
+                passo = -1
+                res.innerHTML += `Alterado para ${passo}.</p>`
+            } else {
+                passo *= -1
+                res.innerHTML += `Alterado para ${passo}.</p>`
+            }
+        }
+        while (c >= fim) {
+            res.innerHTML += `${c} ➡️ `
+            c += passo
+        }
     }
+    res.innerHTML += '&#x1F3C1</p>'
 }
